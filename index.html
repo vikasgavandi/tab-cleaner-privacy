@@ -1,296 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tab Cleaner — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for the Tab Cleaner Chrome extension.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FCFCFB;
+    --ink:#101114;
+    --muted:#6B6E76;
+    --accent:#3654F0;
+    --line:#E7E7E3;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', Arial, sans-serif;
+    font-size:16px;
+    line-height:1.7;
+  }
+  .shell{
+    max-width:1080px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:64px;
+    padding:64px 32px 100px;
+  }
+  .side{position:sticky; top:64px; align-self:start;}
+  .mark{
+    display:flex; align-items:center; gap:10px;
+    margin-bottom:28px;
+  }
+  .mark svg{width:26px;height:26px;color:var(--accent);}
+  .mark span{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size:16px;
+  }
+  .side h1{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size:30px;
+    line-height:1.15;
+    margin:0 0 14px;
+  }
+  .side p{
+    color:var(--muted);
+    font-size:15px;
+    max-width:32ch;
+    margin:0 0 28px;
+  }
+  .side .updated{
+    font-size:13px;
+    color:var(--muted);
+    border-top:1px solid var(--line);
+    padding-top:16px;
+    margin-bottom:28px;
+  }
+  .sidenav{list-style:none; margin:0; padding:0; display:none;}
+  .sidenav li{margin-bottom:2px;}
+  .sidenav a{
+    display:block;
+    color:var(--muted);
+    text-decoration:none;
+    font-size:14px;
+    padding:6px 0;
+    border-left:2px solid transparent;
+    padding-left:12px;
+    transition:color .15s ease, border-color .15s ease;
+  }
+  .sidenav a:hover, .sidenav a.active{
+    color:var(--ink);
+    border-left-color:var(--accent);
+  }
 
-    <title>Tab Cleaner - Privacy Policy</title>
+  .main .promise{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    margin-bottom:56px;
+  }
+  .promise div{
+    background:var(--bg);
+    padding:22px 20px;
+  }
+  .promise .num{
+    display:block;
+    font-family:'Space Grotesk', sans-serif;
+    color:var(--accent);
+    font-size:13px;
+    margin-bottom:8px;
+  }
+  .promise p{margin:0; font-size:15px;}
 
-    <meta
-        name="description"
-        content="Privacy Policy for the Tab Cleaner Chrome extension."
-    >
+  section{
+    padding:36px 0;
+    border-top:1px solid var(--line);
+    display:grid;
+    grid-template-columns:80px 1fr;
+    gap:24px;
+  }
+  section:first-of-type{border-top:none; padding-top:0;}
+  section .idx{
+    font-family:'Space Grotesk', sans-serif;
+    color:var(--accent);
+    font-size:14px;
+    padding-top:3px;
+  }
+  section h2{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size:20px;
+    margin:0 0 10px;
+  }
+  section p{margin:0 0 12px; color:var(--ink);}
+  section p:last-child{margin-bottom:0;}
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  footer{
+    max-width:1080px;
+    margin:0 auto;
+    padding:0 32px 60px 392px;
+    font-size:13px;
+    color:var(--muted);
+  }
 
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f9ff;
-            color: #1f2937;
-            line-height: 1.7;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #0d47a1, #168cff);
-            color: #ffffff;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .header h1 {
-            margin: 0 0 10px;
-            font-size: 42px;
-        }
-
-        .header p {
-            margin: 0;
-            font-size: 16px;
-            opacity: 0.9;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .content {
-            background: #ffffff;
-            padding: 45px;
-            border-radius: 16px;
-            box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
-        }
-
-        h2 {
-            margin-top: 35px;
-            margin-bottom: 12px;
-            color: #0d47a1;
-            font-size: 24px;
-        }
-
-        h2:first-child {
-            margin-top: 0;
-        }
-
-        p {
-            margin: 0 0 16px;
-        }
-
-        ul {
-            margin-top: 8px;
-            padding-left: 25px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .highlight {
-            margin: 25px 0;
-            padding: 20px;
-            background: #eef6ff;
-            border-left: 4px solid #168cff;
-            border-radius: 8px;
-        }
-
-        .highlight strong {
-            color: #0d47a1;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 30px 20px;
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        @media (max-width: 600px) {
-            .header {
-                padding: 45px 20px;
-            }
-
-            .header h1 {
-                font-size: 32px;
-            }
-
-            .content {
-                padding: 25px 20px;
-            }
-
-            h2 {
-                font-size: 21px;
-            }
-        }
-    </style>
+  @media (max-width:820px){
+    .shell{grid-template-columns:1fr; gap:36px; padding:44px 22px 70px;}
+    .side{position:static;}
+    .promise{grid-template-columns:1fr;}
+    section{grid-template-columns:44px 1fr; gap:14px;}
+    footer{padding-left:22px;}
+  }
+</style>
 </head>
-
 <body>
+<div class="shell">
 
-<header class="header">
-    <h1>Tab Cleaner</h1>
-    <p>Privacy Policy</p>
-    <p>Last updated: September 9, 2026</p>
-</header>
+  <div class="side">
+    <div class="mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="9" height="6" rx="1.5"/><rect x="13" y="6" width="9" height="6" rx="1.5"/><path d="M6.5 12v3a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-3"/></svg>
+      <span>Tab Cleaner</span>
+    </div>
+    <h1>Privacy policy</h1>
+    <p>What this extension does — and doesn't do — with information from your browser.</p>
+    <p class="updated">Last updated September 9, 2026</p>
+    <ul class="sidenav" id="sidenav">
+      <li><a href="#s1">What we look at</a></li>
+      <li><a href="#s2">No data collection</a></li>
+      <li><a href="#s3">Memory info</a></li>
+      <li><a href="#s4">Local only</a></li>
+      <li><a href="#s5">No backend</a></li>
+      <li><a href="#s6">Storage</a></li>
+      <li><a href="#s7">Sharing</a></li>
+      <li><a href="#s8">Page content</a></li>
+      <li><a href="#s9">Trackers</a></li>
+      <li><a href="#s10">Security</a></li>
+      <li><a href="#s11">Changes</a></li>
+      <li><a href="#s12">Contact</a></li>
+    </ul>
+  </div>
 
-<main class="container">
+  <div class="main">
 
-    <article class="content">
+    <div class="promise">
+      <div><span class="num">01</span><p>No browsing data is collected.</p></div>
+      <div><span class="num">02</span><p>Nothing is sent to a server — there isn't one.</p></div>
+      <div><span class="num">03</span><p>Nothing is sold, shared, or handed off.</p></div>
+    </div>
 
-        <div class="highlight">
-            <strong>Your Privacy Matters</strong>
-            <p>
-                Tab Cleaner does not collect, store, transmit, sell, or share
-                your personal information or browsing data. The extension
-                operates locally within your browser and does not send user
-                data to any backend server.
-            </p>
-        </div>
+    <section id="s1">
+      <span class="idx">01</span>
+      <div>
+        <h2>What we look at</h2>
+        <p>To do its job, Tab Cleaner reads basic information about your open tabs — titles, URLs, domains, and tab IDs. It only touches this to show your open tabs, spot duplicates, and let you close the ones you don't need.</p>
+      </div>
+    </section>
 
-        <h2>1. Information We Access</h2>
+    <section id="s2">
+      <span class="idx">02</span>
+      <div>
+        <h2>No user data collection</h2>
+        <p>Tab Cleaner doesn't collect or capture user data. It never gathers personal information, browsing history, passwords, login credentials, form entries, page content, files, or anything else sensitive.</p>
+      </div>
+    </section>
 
-        <p>
-            Tab Cleaner may access information about your currently open
-            browser tabs, such as tab titles, URLs, domains, and tab
-            identifiers.
-        </p>
+    <section id="s3">
+      <span class="idx">03</span>
+      <div>
+        <h2>Memory info, shown locally</h2>
+        <p>Where your browser makes it available, Tab Cleaner reads memory-usage figures for each tab so you can spot which ones are eating up resources. That number stays on your screen.</p>
+      </div>
+    </section>
 
-        <p>
-            This information is accessed only when required to provide the
-            extension's core functionality, including displaying open tabs,
-            identifying duplicate tabs, and allowing users to close unwanted
-            tabs.
-        </p>
+    <section id="s4">
+      <span class="idx">04</span>
+      <div>
+        <h2>Everything happens locally</h2>
+        <p>All of Tab Cleaner's work runs inside your own browser. None of the tab information it reads is uploaded to, stored on, or processed by a Tab Cleaner server, because there isn't one handling it.</p>
+      </div>
+    </section>
 
-        <h2>2. No User Data Collection</h2>
+    <section id="s5">
+      <span class="idx">05</span>
+      <div>
+        <h2>No backend, period</h2>
+        <p>No tab URLs, titles, browsing activity, or memory data ever leaves your browser to reach our servers. We don't have a channel for that, because we don't run a backend that receives this information.</p>
+      </div>
+    </section>
 
-        <p>
-            Tab Cleaner does not collect or capture user data.
-        </p>
+    <section id="s6">
+      <span class="idx">06</span>
+      <div>
+        <h2>Nothing stored externally</h2>
+        <p>Tab Cleaner doesn't store your browsing data on any external server, and doesn't hold on to website content, passwords, credentials, form data, personal files, or browsing history in any form.</p>
+      </div>
+    </section>
 
-        <p>
-            The extension does not intentionally collect personal information,
-            browsing history, passwords, authentication credentials, form
-            data, website content, files, or other sensitive information.
-        </p>
+    <section id="s7">
+      <span class="idx">07</span>
+      <div>
+        <h2>We don't share anything</h2>
+        <p>We don't sell, rent, or share your information with third parties. Since nothing is collected or transmitted to a backend in the first place, there's no data to hand to anyone else.</p>
+      </div>
+    </section>
 
-        <h2>3. Memory Usage Information</h2>
+    <section id="s8">
+      <span class="idx">08</span>
+      <div>
+        <h2>We don't read your pages</h2>
+        <p>Tab Cleaner doesn't inspect the content of the websites you visit for advertising, analytics, profiling, or tracking. Tab metadata like URLs and titles may be checked briefly and locally, only to spot duplicates and organize what's open.</p>
+      </div>
+    </section>
 
-        <p>
-            Tab Cleaner may use browser-provided information about memory
-            usage associated with browser tabs where such information is
-            available.
-        </p>
+    <section id="s9">
+      <span class="idx">09</span>
+      <div>
+        <h2>No trackers, no analytics</h2>
+        <p>Tab Cleaner doesn't use third-party analytics, advertising, or tracking services to collect your activity or data.</p>
+      </div>
+    </section>
 
-        <p>
-            This information is used locally to display memory usage and help
-            users identify tabs that may be consuming significant system
-            resources.
-        </p>
+    <section id="s10">
+      <span class="idx">10</span>
+      <div>
+        <h2>Security notes</h2>
+        <p>Because nothing is sent to a backend, your tab information stays within your browser the whole time the extension is working. We take reasonable care to keep it secure, though no software can promise absolute security.</p>
+      </div>
+    </section>
 
-        <h2>4. Local Processing</h2>
+    <section id="s11">
+      <span class="idx">11</span>
+      <div>
+        <h2>If this policy changes</h2>
+        <p>This policy may be updated if Tab Cleaner's features or data practices change. Any new version is published here, with an updated date at the top.</p>
+      </div>
+    </section>
 
-        <p>
-            Tab Cleaner processes information locally within the user's
-            browser to provide its tab-management features.
-        </p>
+    <section id="s12">
+      <span class="idx">12</span>
+      <div>
+        <h2>Questions?</h2>
+        <p>Reach the developer through the contact details on the Chrome Web Store listing.</p>
+      </div>
+    </section>
 
-        <p>
-            Tab information accessed by the extension is not uploaded to,
-            stored on, or processed by a Tab Cleaner backend server.
-        </p>
+  </div>
+</div>
 
-        <h2>5. No Backend Data Collection</h2>
+<footer>&copy; 2026 Tab Cleaner. All rights reserved.</footer>
 
-        <p>
-            Tab Cleaner does not operate a backend service that receives,
-            stores, or processes user browsing information.
-        </p>
-
-        <p>
-            No tab URLs, tab titles, browsing activity, memory information,
-            or other extension-generated user information is transmitted to
-            our servers.
-        </p>
-
-        <h2>6. Data Storage</h2>
-
-        <p>
-            Tab Cleaner does not store user browsing data on external servers.
-        </p>
-
-        <p>
-            The extension does not intentionally store website content,
-            passwords, authentication credentials, form data, personal files,
-            or browsing history.
-        </p>
-
-        <h2>7. Data Sharing</h2>
-
-        <p>
-            Tab Cleaner does not sell, rent, or share user information with
-            third parties.
-        </p>
-
-        <p>
-            Since Tab Cleaner does not collect or transmit user data to a
-            backend, there is no user browsing data provided to third-party
-            services.
-        </p>
-
-        <h2>8. Website Content</h2>
-
-        <p>
-            Tab Cleaner does not collect or analyze the contents of websites
-            for advertising, analytics, profiling, or tracking purposes.
-        </p>
-
-        <p>
-            Tab metadata such as URLs and titles may be temporarily accessed
-            locally when required to identify duplicate tabs and organize
-            currently open tabs.
-        </p>
-
-        <h2>9. Third-Party Services</h2>
-
-        <p>
-            Tab Cleaner does not use third-party analytics, advertising, or
-            tracking services to collect browsing activity or user data.
-        </p>
-
-        <h2>10. Security</h2>
-
-        <p>
-            Because Tab Cleaner does not transmit user browsing information to
-            a backend server, user tab information remains within the
-            browser environment while the extension performs its functions.
-        </p>
-
-        <p>
-            While reasonable measures are taken to maintain the security of
-            the extension, no software can guarantee absolute security.
-        </p>
-
-        <h2>11. Changes to This Privacy Policy</h2>
-
-        <p>
-            This Privacy Policy may be updated if the functionality or data
-            practices of Tab Cleaner change.
-        </p>
-
-        <p>
-            Any updated version will be published on this page with a new
-            "Last updated" date.
-        </p>
-
-        <h2>12. Contact</h2>
-
-        <p>
-            If you have questions about this Privacy Policy or Tab Cleaner,
-            please contact the developer through the contact information
-            provided on the Chrome Web Store listing.
-        </p>
-
-    </article>
-
-</main>
-
-<footer class="footer">
-    &copy; 2026 Tab Cleaner. All rights reserved.
-</footer>
+<script>
+  document.getElementById('sidenav').style.display = 'block';
+  const links = document.querySelectorAll('.sidenav a');
+  const sections = document.querySelectorAll('.main section');
+  const map = {};
+  links.forEach(a=>map[a.getAttribute('href').slice(1)] = a);
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        links.forEach(a=>a.classList.remove('active'));
+        map[entry.target.id].classList.add('active');
+      }
+    });
+  }, {rootMargin:'-20% 0px -70% 0px'});
+  sections.forEach(s=>observer.observe(s));
+</script>
 
 </body>
 </html>
